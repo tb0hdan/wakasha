@@ -15,5 +15,8 @@ deps:	snowboy
 py2app:
 	@python setup.py py2app
 
+dmg:	py2app
+	@hdiutil create -srcfolder dist/wakasha.app ./wakasha.dmg
+
 clean:
 	@rm -rf ./build ./dist
