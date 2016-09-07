@@ -3,6 +3,7 @@ import re
 import zipfile
 import sys
 import signal
+import shutil
 import tempfile
 
 from wakasha.extlib.snowboydetect.snowboydecoder import HotwordDetector, play_audio_file
@@ -50,3 +51,4 @@ def main():
                sleep_time=0.03)
 
     detector.terminate()
+    shutil.rmtree(tmpdir)

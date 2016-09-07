@@ -20,3 +20,4 @@ dmg:	py2app
 
 clean:
 	@rm -rf ./build ./dist
+	@rm -f ./*.dmg
