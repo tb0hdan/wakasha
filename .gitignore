@@ -92,3 +92,4 @@ ENV/
 # local data
 *.pmdl
 *.dmg
+.DS_*

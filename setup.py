@@ -2,7 +2,12 @@ from setuptools import setup
 
 APP = ['wakasha.py']
 DATA_FILES = []
-OPTIONS = {'argv_emulation': True}
+OPTIONS = {
+    'argv_emulation': True,
+    'plist': {
+        'LSBackgroundOnly': True,
+     },
+}
 
 setup(
     app=APP,

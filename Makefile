@@ -1,4 +1,7 @@
-.PHONY: snowboy
+.PHONY: brew snowboy
+
+brew:
+	@brew install swig portaudio sox
 
 snowboy:
 	@cd snowboy/swig/Python; make
@@ -9,10 +12,10 @@ snowboy:
 	@cp -v model.pmdl wakasha/extlib/snowboydetect/resources/
 	@cp -R snowboy/resources wakasha/extlib/snowboydetect
 
-deps:	snowboy
+deps:	brew snowboy
 	@pip install -r requirements.txt
 
-py2app:
+py2app:	deps
 	@python setup.py py2app
 
 dmg:	py2app
