@@ -9,8 +9,10 @@ cp wakasha/action/sample.py wakasha/action/action.py
 
 ## Build process
 Go to https://snowboy.kitt.ai/, download or create model, store it within project directory
-as model.pmdl
+as model.pmdl, then run package build:
+
 ```make clean && make dmg```
+
 
 ## Installation and run
 Click on DMG, drag icon to programs, open spotlight, type `wakasha`
