@@ -1,4 +1,7 @@
-# wakasha - A purely (self)entertainment software that listens for hotword and perfoms an action
+# wakasha - A purely (self)entertainment software that listens for hotword(OFFLINE!) and perfoms an action
+
+## Privacy concerns
+Snowboy library listens for hotword completely offline and voice data never leaves the machine.
 
 ## Configuration process
 Copy and edit sample actio file:
